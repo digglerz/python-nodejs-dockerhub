@@ -30,3 +30,6 @@ RUN buildDeps='xz-utils' \
     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" \
     && apt-get purge -y --auto-remove $buildDeps \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
+
+# Tools install
+RUN apt install -y zip
