@@ -32,4 +32,4 @@ RUN buildDeps='xz-utils' \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 # Tools install
-RUN apt install -y zip
+RUN apt install -y zip jq
