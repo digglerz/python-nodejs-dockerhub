@@ -37,9 +37,3 @@ RUN apt install -y zip
 # Set Timezone
 ENV TZ=Europe/Paris
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-# Node dependencies for tests
-RUN mkdir node_dependencies
-WORKDIR /tmp/node_dependencies
-RUN npm init -f \
-    && npm install -f eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
