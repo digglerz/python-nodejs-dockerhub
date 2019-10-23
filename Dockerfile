@@ -16,11 +16,11 @@ RUN apt update -y \
 # 
 # We must use a procedure that match with:
 # - Debian 9, slim version
-# - Node 8
-# See on docker hub (https://hub.docker.com/_/node) for corresponding tag "8-stretch-slim" which code is :
-# https://github.com/nodejs/docker-node/blob/8c0a9f2c144904631cf783bdd57b4a19300e6b1f/8/stretch-slim/Dockerfile
+# - Node 12.13.0
+# See on docker hub (https://hub.docker.com/_/node) for corresponding tag eg "12.13.0-stretch-slim" which code is :
+# https://github.com/nodejs/docker-node/blob/c31a071c73c5cc40dc662b75a4ee9f9fc23d6a39/12/stretch-slim/Dockerfile
 
-ENV NODE_VERSION 8.14.0
+ENV NODE_VERSION 12.13.0
 ENV ARCH x64
 WORKDIR /tmp
 RUN buildDeps='xz-utils' \
