@@ -1,4 +1,4 @@
-FROM python:3.8.1-slim-buster
+FROM python:3.6-slim-stretch
 # We choose an Python image based on :
 # - Debian 9, slim version
 # - Python 3.8.1
